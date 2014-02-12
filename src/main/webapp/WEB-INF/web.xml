@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<servlet-name>localizadorJSP</servlet-name>
+		<jsp-file>/localizador/jsp/mapa.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>yourInfoJSP</servlet-name>
+		<jsp-file>/yourinfo/jsp/index.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>localizadorJSP</servlet-name>
+		<url-pattern>/localizador/inicio.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>yourInfoJSP</servlet-name>
+		<url-pattern>/yourinfo</url-pattern>
+	</servlet-mapping>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/jsp/error/404.jsp</location>
+	</error-page>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
