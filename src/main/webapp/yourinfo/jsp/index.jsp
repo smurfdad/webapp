@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="/css/standard-css-default-ltr-ltr.css">
     <link rel="stylesheet" type="text/css" href="/css/overlay.css">
-    <title>Smurf Dad Pack :: Your Info</title>    
+    <title>Smurf Dad Pack :: Your Info 11</title>    
   </head>
   <body id="body" class=" es">
     <div id="sites-page-toolbar">
