@@ -35,7 +35,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-jdk14</artifactId>
+			<artifactId>slf4j-log4j12</artifactId>
 			<version>${slf4j.version}</version>
 		</dependency>
 		<!-- Spring -->
@@ -150,7 +150,11 @@
 				<artifactId>appengine-maven-plugin</artifactId>
 				<version>${appengine.target.version}</version>
 				<configuration>
-					<fullScanSeconds>1</fullScanSeconds>
+					<jvmFlags>
+						<jvmFlag>-Xdebug</jvmFlag>
+						<jvmFlag>-Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=y
+						</jvmFlag>
+					</jvmFlags>
 					<disableUpdateCheck>true</disableUpdateCheck>
 				</configuration>
 			</plugin>

@@ -13,6 +13,20 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
+	<filter>
+		<filter-name>Internal301RedirectFilter</filter-name>
+		<filter-class>es.smurfdad.util.web.Internal301RedirectFilter</filter-class>
+		<init-param>
+			<param-name>/localizador/inicio.do</param-name>
+			<param-value>/localizador</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>Internal301RedirectFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/spring-mvc-servlet.xml</param-value>
