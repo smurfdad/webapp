@@ -14,6 +14,6 @@ public class YourInfo {
     @RequestMapping(method=RequestMethod.GET)
     public String inicio(){
         logger.debug("Inicio");
-        return "yourinfo/jsp/index";
+        return "yourinfo";
     }
 }

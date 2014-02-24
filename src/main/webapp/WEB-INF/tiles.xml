@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base" template="/jsp/layout/base.jsp">
+		<put-attribute name="site" value="Smurf Dad´s App" />
+		<put-attribute name="description" value="Pequeñas aplicaciones para quien necesite" />
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp" />
+ 	</definition>
+<!-- 		<put-attribute name="header" value="/jsp/layout/header.jsp" />
+		<put-attribute name="navigation" value="/jsp/layout/navigation.jsp" />
+		
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp" />
+ -->
+
+
+	<definition name="home" extends="base">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/jsp/home.jsp" />
+	</definition>
+
+	<definition name="yourinfo" extends="base">
+		<put-attribute name="title" value="Your Info" />
+		<put-attribute name="body" value="/jsp/yourinfo.jsp" />
+	</definition>
+	
+	<definition name="localizador" extends="base">
+		<put-attribute name="title" value="Localizador de Coordenadas" />
+		<put-attribute name="body" value="/jsp/localizador.jsp" />
+	</definition>
+	
+</tiles-definitions>

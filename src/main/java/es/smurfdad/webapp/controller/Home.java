@@ -17,6 +17,6 @@ public class Home {
     @RequestMapping("/")
     public String inicio(){
         logger.debug("Inicio");
-        return "index";
+        return "home";
     }    
 }

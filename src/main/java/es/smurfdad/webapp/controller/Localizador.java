@@ -18,7 +18,7 @@ public class Localizador {
     @RequestMapping(method=RequestMethod.GET)
     public  String inicio(){
         logger.debug("Inicio");
-        return "localizador/jsp/mapa";
+        return "localizador";
     }
 
 }
