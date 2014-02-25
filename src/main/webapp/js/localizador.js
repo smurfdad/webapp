@@ -12,7 +12,7 @@ $(document).ready(function(){
 	$("#btnBuscar").click(function(event){
 		cleanResultado();
 		var addresses = $("#direcciones").val().split("\n");
-
+		$("#resultados").removeClass( "hidden" );
 		$.each(addresses, function(key, address) {
 			if ($.trim(address) != ""){
 				geocoder.geocode( { 'address': address}, function(results, status) {
@@ -46,6 +46,7 @@ $(document).ready(function(){
 	$("#btnLimpiar").click(function(event){
 		if (confirm("Desea borrar todos los datos?")){
 			cleanResultado();
+			$("#resultados").addClass("hidden");
 		}
 	});
 	

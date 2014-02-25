@@ -4,31 +4,25 @@
        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
 <tiles-definitions>
 	<definition name="base" template="/jsp/layout/base.jsp">
-		<put-attribute name="site" value="Smurf Dad´s App" />
-		<put-attribute name="description" value="Pequeñas aplicaciones para quien necesite" />
 		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/jsp/layout/header.jsp" />
 		<put-attribute name="body" value="" />
+		<put-attribute name="lateral" value="/jsp/layout/lateral.jsp" />
 		<put-attribute name="footer" value="/jsp/layout/footer.jsp" />
  	</definition>
-<!-- 		<put-attribute name="header" value="/jsp/layout/header.jsp" />
-		<put-attribute name="navigation" value="/jsp/layout/navigation.jsp" />
-		
-		<put-attribute name="footer" value="/jsp/layout/footer.jsp" />
- -->
-
-
+ 	
 	<definition name="home" extends="base">
-		<put-attribute name="title" value="Home" />
+		<put-attribute name="title" value="home.title" />
 		<put-attribute name="body" value="/jsp/home.jsp" />
 	</definition>
 
 	<definition name="yourinfo" extends="base">
-		<put-attribute name="title" value="Your Info" />
+		<put-attribute name="title" value="yourinfo.title" />
 		<put-attribute name="body" value="/jsp/yourinfo.jsp" />
 	</definition>
 	
 	<definition name="localizador" extends="base">
-		<put-attribute name="title" value="Localizador de Coordenadas" />
+		<put-attribute name="title" value="localizador.title" />
 		<put-attribute name="body" value="/jsp/localizador.jsp" />
 	</definition>
 	
