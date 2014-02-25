@@ -16,17 +16,37 @@
 	<filter>
 		<filter-name>Internal301RedirectFilter</filter-name>
 		<filter-class>es.smurfdad.util.web.Internal301RedirectFilter</filter-class>
+		<description>Este filtro redirige las peticiones a url que hayan podido quedar obsoletas para dirigirlas a su equivalente actual</description>
 		<init-param>
 			<param-name>/localizador/inicio.do</param-name>
 			<param-value>/localizador</param-value>
 		</init-param>
 	</filter>
-	
+
 	<filter-mapping>
 		<filter-name>Internal301RedirectFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-	
+
+	<filter>
+		<filter-name>Host301RedirectFilter</filter-name>
+		<filter-class>es.smurfdad.util.web.Host301RedirectFilter</filter-class>
+		<description>Este filtro redirige las peticiones a los hosts antiguos para posicionarlos en el dominio actual</description>
+		<init-param>
+			<param-name>smurfdad.appspot.com</param-name>
+			<param-value>http://app.smurfdad.es</param-value>
+		</init-param>
+		<init-param>
+			<param-name>smurfdad-app.appspot.com</param-name>
+			<param-value>http://app.smurfdad.es</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>Host301RedirectFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/spring-mvc-servlet.xml</param-value>
