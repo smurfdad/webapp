@@ -1,28 +1,26 @@
-<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">Localizador de Coordenadas</h3>
+		<h3 class="panel-title"><spring:message code="localizador.title" /></h3>
 	</div>
 	<div class="panel-body">
-		Una utilidad para obtener las coordenadas de direcciones que quieras a
-		través del servicio de google Maps<br>
-
+		<spring:message code="localizador.description" />
 	</div>
 	<div class="panel-footer">
 		<a href="/localizador" class="btn btn-default btn-xs" role="button"><span
-			class="glyphicon glyphicon-eye-open"></span> Ver</a>
+			class="glyphicon glyphicon-eye-open"></span> <spring:message code="label.ver" /></a>
 	</div>
 </div>
 
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">Your Info</h3>
+		<h3 class="panel-title"><spring:message code="yourinfo.title" /></h3>
 	</div>
 	<div class="panel-body">
-		Mira que información sobre tí viaja por internet<br>
+		<spring:message code="yourinfo.description"/>
 	</div>
 	<div class="panel-footer">
 		<a href="/yourinfo" class="btn btn-default btn-xs" role="button"><span
-			class="glyphicon glyphicon-eye-open"></span> Ver</a>
+			class="glyphicon glyphicon-eye-open"></span> <spring:message code="label.ver" /></a>
 	</div>
 </div>

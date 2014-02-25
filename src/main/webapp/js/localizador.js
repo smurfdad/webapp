@@ -44,10 +44,8 @@ $(document).ready(function(){
 		});
 	});
 	$("#btnLimpiar").click(function(event){
-		if (confirm("Desea borrar todos los datos?")){
-			cleanResultado();
-			$("#resultados").addClass("hidden");
-		}
+		cleanResultado();
+		$("#resultados").addClass("hidden");
 	});
 	
 });
