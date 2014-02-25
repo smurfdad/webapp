@@ -1,8 +1,8 @@
-<%@ page import="org.apache.commons.lang.StringEscapeUtils"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <dl>
 	<dt>IP P&uacute;blica</dt>
-	<dd><%=request.getRemoteAddr()%></dd>
+	<dd><c:out value="${ip}"/></dd>
 	<dt>Informaci&oacute;n Regional</dt>
-	<dd><%=StringEscapeUtils.escapeHtml(request.getLocale().getDisplayCountry(request.getLocale()))%></dd>
-	<dd><%=StringEscapeUtils.escapeHtml(request.getLocale().getDisplayLanguage(request.getLocale()))%></dd>
+	<dd><c:out value="${pais}"/></dd>
+	<dd><c:out value="${idioma}"/></dd>
 </dl>
