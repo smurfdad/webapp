@@ -9,7 +9,7 @@
 		<input type="reset" class="btn btn-default" id="btnLimpiar" value="<spring:message code="label.limpiar"/>"/>
 	</div>
 </form>
-<table id="resultados" class="table hidden">
+<table id="resultados" class="table table-condensed hidden">
 	<thead>
 		<tr>
 			<!-- <th>#</th> -->
